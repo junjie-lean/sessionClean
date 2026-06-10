@@ -54,16 +54,7 @@ async function clearBrowsingData(origin, options) {
 }
 
 async function hardReload(tabId) {
-  try {
-    await chrome.scripting.executeScript({
-      target: { tabId },
-      func: () => {
-        window.location.reload(true);
-      }
-    });
-  } catch {
-    await chrome.tabs.reload(tabId, { bypassCache: true });
-  }
+  chrome.tabs.reload(tabId, { bypassCache: true });
 }
 
 async function clearSelected(tabId, url, options) {
@@ -76,7 +67,7 @@ async function clearSelected(tabId, url, options) {
   await clearBrowsingData(origin, options);
 
   if (options.fileDiskCache) {
-    await hardReload(tabId);
+    hardReload(tabId);
   }
 }
 

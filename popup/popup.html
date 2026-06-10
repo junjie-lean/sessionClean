@@ -18,11 +18,8 @@
 				</div>
 			</div>
 			<div class="topbar-actions">
-				<button id="btn-settings" type="button" class="icon-btn" title="设置" aria-label="设置">
-					<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.5A3.5 3.5 0 1 0 12 8.5a3.5 3.5 0 0 0 0 7zm7.4-2.9a1 1 0 0 0 .2-1.1l-1-1.7a1 1 0 0 0-.9-.5h-.2a7 7 0 0 0-.6-.4v-1.8a1 1 0 0 0-.5-.9l-1.7-1a1 1 0 0 0-1.1.2l-.1.1a7 7 0 0 0-1.2-.7V4.6a1 1 0 0 0-.8-.8l-2-.4a1 1 0 0 0-1 .5l-.7 1.2a7 7 0 0 0-1.4 0l-.7-1.2a1 1 0 0 0-1-.5l-2 .4a1 1 0 0 0-.8.8v1.4a7 7 0 0 0-1.2.7l-.1-.1a1 1 0 0 0-1.1-.2l-1.7 1a1 1 0 0 0-.5.9v1.8c-.2.1-.4.3-.6.4h-.2a1 1 0 0 0-.9.5l-1 1.7a1 1 0 0 0 .2 1.1l.1.1a7 7 0 0 0 0 1.4l-.1.1a1 1 0 0 0-.2 1.1l1 1.7a1 1 0 0 0 .9.5h.2c.2.1.4.3.6.4v1.8a1 1 0 0 0 .5.9l1.7 1a1 1 0 0 0 1.1-.2l.1-.1c.4.3.8.5 1.2.7v1.4a1 1 0 0 0 .8.8l2 .4a1 1 0 0 0 1-.5l.7-1.2c.5.1.9.1 1.4 0l.7 1.2a1 1 0 0 0 1 .5l2-.4a1 1 0 0 0 .8-.8v-1.4c.4-.2.8-.4 1.2-.7l.1.1a1 1 0 0 0 1.1.2l1.7-1a1 1 0 0 0 .5-.9v-1.8c.2-.1.4-.3.6-.4h.2a1 1 0 0 0 .9-.5l1-1.7a1 1 0 0 0-.2-1.1l-.1-.1a7 7 0 0 0 0-1.4l.1-.1z"/></svg>
-				</button>
 				<button id="btn-close" type="button" class="icon-btn" title="关闭" aria-label="关闭">
-					<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+					<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" /></svg>
 				</button>
 			</div>
 		</header>
@@ -34,12 +31,15 @@
 					<circle class="gauge-progress" cx="44" cy="44" r="36"></circle>
 				</svg>
 				<div class="gauge-center">
-					<span class="gauge-label">预计可释放</span>
 					<strong id="total-size" class="gauge-value">--</strong>
 				</div>
 			</div>
 			<div class="summary-text">
-				<p class="summary-title">已选择 <strong id="selected-count">0</strong> 项</p>
+				<p class="summary-title">
+					已选择
+					<strong id="selected-count">0</strong>
+					项
+				</p>
 				<p class="summary-desc">清理后可释放存储空间，提升浏览器性能</p>
 			</div>
 		</section>
@@ -47,21 +47,18 @@
 		<ul class="cache-list" id="cache-list"></ul>
 
 		<button id="btn-confirm" type="button" class="primary-btn">
-			<svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h2l1 12h12l1-12h2"/><path d="M9 6V4h6v2"/><path d="M8 10l1 8M12 10v8M16 10l-1 8"/></svg>
-			<span class="btn-text">立即清理 (<span id="btn-size">--</span>)</span>
+			<svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+				<path d="M3 6h2l1 12h12l1-12h2" />
+				<path d="M9 6V4h6v2" />
+				<path d="M8 10l1 8M12 10v8M16 10l-1 8" />
+			</svg>
+			<span class="btn-text">
+				立即清理 (
+				<span id="btn-size">--</span>
+				)
+			</span>
 			<span class="btn-spinner" aria-hidden="true"></span>
 		</button>
-
-		<footer class="bottom-bar">
-			<button id="btn-history" type="button" class="text-btn">
-				<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-				清理历史
-			</button>
-			<button id="btn-refresh" type="button" class="text-btn">
-				<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
-				刷新数据
-			</button>
-		</footer>
 
 		<p id="status" class="status" aria-live="polite"></p>
 

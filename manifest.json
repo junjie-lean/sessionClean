@@ -1,15 +1,14 @@
 {
   "manifest_version": 3,
   "name": "Session Clean",
-  "version": "0.3.0",
+  "version": "0.3.4",
   "description": "按选项清理当前页面的会话与缓存数据",
   "permissions": [
     "cookies",
     "browsingData",
     "tabs",
     "activeTab",
-    "scripting",
-    "storage"
+    "scripting"
   ],
   "host_permissions": [
     "<all_urls>"
