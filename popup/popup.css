@@ -201,7 +201,7 @@ body {
 
 .gauge-value {
   margin-top: 1px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   color: var(--theme);
   line-height: 1.2;

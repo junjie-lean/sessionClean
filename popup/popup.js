@@ -16,7 +16,7 @@ const CACHE_ITEMS = [
 	{
 		id: 'indexedDB',
 		title: '索引数据库',
-		subtitle: 'IndexDB',
+		subtitle: 'IndexedDB',
 		desc: '清除结构化数据库缓存',
 		icon: '<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>',
 	},
